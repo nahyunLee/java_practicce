@@ -1,7 +1,10 @@
 package stream;
 
+import lombok.AllArgsConstructor;
+
 import java.util.stream.Stream;
 
+@AllArgsConstructor
 public class Util {
     public Student[] makeStudentArray(){
         Student[] studentStream = {
