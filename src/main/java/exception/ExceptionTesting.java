@@ -17,7 +17,9 @@ public class ExceptionTesting {
         }
     }
 
-    static public void exceptionThrowTest(int expectedAge) throws Exception {
+    // NahyunException이 Exception으로 상속받으면 메소드 throw필요
+    // NahyunException이 RuntimeException으로 상속받으면 메소드 throw 필요 없음 --> RuntimeException은 보통 잘 처리 안함 --> 꼭 필요한 애들만 처
+    static public void exceptionThrowTest(int expectedAge){
         int nahyunAge = 26;
         try {
             if (nahyunAge > expectedAge)
